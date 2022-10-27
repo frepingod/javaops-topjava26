@@ -6,7 +6,11 @@
 
 ![topjava_structure](https://user-images.githubusercontent.com/13649199/27433714-8294e6fe-575e-11e7-9c41-7f6e16c5ebe5.jpg)
 
-## Ссылки на GitHub репозитории данного курса (онлайн стажировки):
+## Полезные ссылки от данного курса (онлайн стажировки):
+
+### [Демо разрабатываемого приложения](http://topjava.herokuapp.com/)
+
+### GitHub репозитории
 
 * [JavaWebinar](https://github.com/JavaWebinar/topjava)
 
