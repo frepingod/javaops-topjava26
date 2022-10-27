@@ -10,7 +10,7 @@
 
 ### [Демо разрабатываемого приложения](http://topjava.herokuapp.com/)
 
-### GitHub репозитории
+### GitHub репозитории:
 
 * [JavaWebinar](https://github.com/JavaWebinar/topjava)
 
