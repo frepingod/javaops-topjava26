@@ -15,6 +15,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Target({METHOD, FIELD})
 @Retention(RUNTIME)
 public @interface NoHtml {
+
     String message() default "{error.noHtml}";
 
     Class<?>[] groups() default {};

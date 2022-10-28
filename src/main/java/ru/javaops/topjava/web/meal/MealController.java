@@ -33,6 +33,7 @@ import static ru.javaops.topjava.util.validation.ValidationUtil.checkNew;
 @Slf4j
 @AllArgsConstructor
 public class MealController {
+
     static final String REST_URL = "/api/profile/meals";
 
     private final MealRepository repository;
@@ -58,7 +59,6 @@ public class MealController {
         return MealsUtil.getTos(repository.getAll(authUser.id()), authUser.getUser().getCaloriesPerDay());
     }
 
-
     @PutMapping(value = "/{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void update(@AuthenticationPrincipal AuthUser authUser, @Valid @RequestBody Meal meal, @PathVariable int id) {
@@ -80,7 +80,6 @@ public class MealController {
                 .buildAndExpand(created.getId()).toUri();
         return ResponseEntity.created(uriOfNewResource).body(created);
     }
-
 
     @GetMapping("/filter")
     public List<MealTo> getBetween(@AuthenticationPrincipal AuthUser authUser,

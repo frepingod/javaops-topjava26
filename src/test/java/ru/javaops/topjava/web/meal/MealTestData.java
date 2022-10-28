@@ -11,6 +11,7 @@ import java.util.List;
 import static java.time.LocalDateTime.of;
 
 public class MealTestData {
+
     public static final MatcherFactory.Matcher<Meal> MEAL_MATCHER = MatcherFactory.usingIgnoringFieldsComparator(Meal.class, "user");
     public static MatcherFactory.Matcher<MealTo> MEAL_TO_MATCHER = MatcherFactory.usingEqualsComparator(MealTo.class);
 

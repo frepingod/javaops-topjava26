@@ -3,6 +3,7 @@ package ru.javaops.topjava.model;
 import org.springframework.security.core.GrantedAuthority;
 
 public enum Role implements GrantedAuthority {
+
     USER,
     ADMIN;
 

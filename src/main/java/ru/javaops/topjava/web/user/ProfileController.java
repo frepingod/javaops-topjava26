@@ -27,6 +27,7 @@ import static ru.javaops.topjava.util.validation.ValidationUtil.checkNew;
 // TODO: cache only most requested data!
 @CacheConfig(cacheNames = "users")
 public class ProfileController extends AbstractUserController {
+
     static final String REST_URL = "/api/profile";
 
     @GetMapping

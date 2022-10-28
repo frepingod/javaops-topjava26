@@ -30,6 +30,7 @@ import static ru.javaops.topjava.util.UserUtil.DEFAULT_CALORIES_PER_DAY;
 @Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class User extends NamedEntity implements HasIdAndEmail, Serializable {
+
     @Serial
     private static final long serialVersionUID = 1L;
 

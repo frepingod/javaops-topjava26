@@ -10,6 +10,7 @@ import ru.javaops.topjava.repository.UserRepository;
 @Service
 @AllArgsConstructor
 public class MealService {
+
     private final MealRepository mealRepository;
     private final UserRepository userRepository;
 

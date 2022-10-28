@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 @Component
 @AllArgsConstructor
 public class UniqueMailValidator implements org.springframework.validation.Validator {
+
     public static final String EXCEPTION_DUPLICATE_EMAIL = "User with this email already exists";
 
     private final UserRepository repository;
@@ -34,13 +35,16 @@ public class UniqueMailValidator implements org.springframework.validation.Valid
                             int dbId = dbUser.id();
 
                             // it is ok, if update ourself
-                            if (user.getId() != null && dbId == user.id()) return;
+                            if (user.getId() != null && dbId == user.id()) {
+                                return;
+                            }
 
                             // Workaround for update with user.id=null in request body
                             // ValidationUtil.assureIdConsistent called after this validation
                             String requestURI = request.getRequestURI();
-                            if (requestURI.endsWith("/" + dbId) || (dbId == SecurityUtil.authId() && requestURI.contains("/profile")))
+                            if (requestURI.endsWith("/" + dbId) || (dbId == SecurityUtil.authId() && requestURI.contains("/profile"))) {
                                 return;
+                            }
                         }
                         errors.rejectValue("email", "", EXCEPTION_DUPLICATE_EMAIL);
                     });
