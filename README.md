@@ -1,17 +1,28 @@
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/bee16f3145654047a0505c62aeefd8a2)](https://www.codacy.com/gh/frepingod/topjava/dashboard)
+Java Enterprise Online Project
+===============================
 
-# Java Enterprise Online Project 
+Наиболее востребованные технологии /инструменты / фреймворки Java Enterprise:
+Maven/ Spring/ Security/ JPA(Hibernate)/ REST(Jackson)/ Bootstrap(CSS)/ jQuery + plugins.
 
-В рамках данного курса (онлайн стажировки) разработано полнофункциональное Spring/JPA Enterprise приложение c авторизацией и правами доступа на основе ролей с использованием наиболее популярных инструментов и технологий Java: Maven, Spring MVC, Security, JPA(Hibernate), REST(Jackson), Bootstrap (css,js), datatables, jQuery + plugins, Java 8 Stream and Time API и хранением в базах данных Postgresql и HSQLDB.
+- [Вступительное занятие](https://github.com/JavaOPs/topjava)
+- [Описание и план проекта](https://github.com/JavaOPs/topjava/blob/master/description.md)
+- [Wiki](https://github.com/JavaOPs/topjava/wiki)
+- [Wiki Git](https://github.com/JavaOPs/topjava/wiki/Git)
+- [Wiki IDEA](https://github.com/JavaOPs/topjava/wiki/IDEA)
+- [Демо разрабатываемого приложения](http://topjava.herokuapp.com/)
 
-![topjava_structure](https://user-images.githubusercontent.com/13649199/27433714-8294e6fe-575e-11e7-9c41-7f6e16c5ebe5.jpg)
+### Миграция TopJava на Spring-Boot
+Исходный код с обновленными зависимостями взять из [курса BootJava](https://javaops.ru/view/bootjava):  
+[https://github.com/JavaOPs/bootjava/tree/patched](https://github.com/JavaOPs/bootjava/tree/patched)
 
-## Полезные ссылки от данного курса (онлайн стажировки):
-
-### [Демо разрабатываемого приложения](http://topjava.herokuapp.com/)
-
-### GitHub репозитории:
-
-* [JavaWebinar](https://github.com/JavaWebinar/topjava)
-
-* [JavaOPs](https://github.com/JavaOPs/topjava)
+-------------------------------------------------------------
+- Stack: [JDK 17](http://jdk.java.net/17/), Spring Boot 2.7, Lombok, H2, Caffeine Cache, Swagger/OpenAPI 3.0
+- Run: `mvn spring-boot:run` in root directory.
+-----------------------------------------------------
+[REST API documentation](http://localhost:8080/swagger-ui.html)  
+Креденшелы:
+```
+Admin: admin@gmail.com / admin
+User:  user@yandex.ru / password
+Guest: guest@gmail.com / guest
+```
